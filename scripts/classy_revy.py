@@ -17,7 +17,7 @@ class Material:
         try:
             self.status = info_dict["status"]
         except KeyError:
-            print("No status on '{}' is set.".format{self.title})
+            print("No status on '{}' is set.".format(self.title))
         self.props = info_dict["props"]
         self.length = info_dict["eta"].replace('$','').split()[0]
         self.path = os.path.abspath(info_dict["path"])
